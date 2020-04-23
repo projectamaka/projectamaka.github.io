@@ -2,30 +2,7 @@
 <html lang="en">
 
 <head>
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
- <link rel="icon" href="img/ug.png" type="image/gif" sizes="16x16">
-  <title>Project Amaka</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.css" rel="stylesheet">
-
     <style>
-	 
- 
-
-
-
         .circle {
             border: 1px solid black;
             border-radius: 50%;
@@ -102,7 +79,19 @@
             }
         }
     </style>
-   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Project Amaka</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -120,10 +109,6 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
                     </li>
-					
-					<li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#blog">Journey Blog</a>
-                    </li>
 
                     <li class="nav-item">
                         <div class="dropdown show">
@@ -140,13 +125,12 @@
                         <!-- <a class="nav-link js-scroll-trigger" href="blog.html">Blog</a> -->
                         <div class="dropdown show">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLinkNews" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Project
+    News
   </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkNews">
-								<a class="dropdown-item" href="#">Findings and Insights</a>
+                                <a class="dropdown-item" href="blog.html">Blog</a>
                                 <a class="dropdown-item" href="#">Concept Design</a>
-                                <a class="dropdown-item" href="exhibition.html">Exhibition</a>
-								<a class="dropdown-item" href="#">Press Release</a>
+                                <a class="dropdown-item" href="game.html">Exhibition</a>
                             </div>
                         </div>
                     </li>
@@ -166,7 +150,6 @@
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Project Amaka</h1>
                 <!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">PBLEastAfrica Uganda Project 2020</h2> -->
-                <!-- <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> -->
             </div>
         </div>
     </header>
@@ -186,192 +169,10 @@
             <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
         </div>
     </section>
-	
-	 
-
-
-<script>
-
-$('#carouselExample').on('slide.bs.carousel', function (e) {
-
-  
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 3;
-    var totalItems = $('.carousel-item').length;
-    
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-            }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-            }
-        }
-    }
-});
-
-
-
-
-
-  $(document).ready(function() {
-/* show lightbox when clicking a thumbnail */
-    $('a.thumb').click(function(event){
-      event.preventDefault();
-      var content = $('.modal-body');
-      content.empty();
-        var title = $(this).attr("title");
-        $('.modal-title').html(title);        
-        content.html($(this).html());
-        $(".modal-profile").modal({show:true});
-    });
-
-  });
-</script>
-	<section id="blog" class="projects-section bg-light">
-  <div class="container my-4">
- <h2 class="text-center"  >Journey Blog</h2>
-           
-    
-    <br/>
-    <br/>
-    <!--Carousel Wrapper-->
-    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-      <!--Controls-->
-	  <div style="text-align:center;
-  align-content:center;">
-      <div  class="controls-top btn-group" >
-        <button type="button" class="btn btn-primary" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></button>
-        <button type="button"class="btn btn-primary"  href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></button>
-      </div>
-	  </div>
-      <!--/.Controls-->
-
-      <!-- <!--Indicators-->  
-      <!-- <ol class="carousel-indicators"> -->
-        <!-- <li data-target="#multi-item-example" data-slide-to="0" class="active"></li> -->
-        <!-- <li data-target="#multi-item-example" data-slide-to="1"></li> -->
-        <!-- <li data-target="#multi-item-example" data-slide-to="2"></li> -->
-      <!-- </ol> -->
-      <!-- <!--/.Indicators-->  
-
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-
-        <!--First slide-->
-        <div class="carousel-item bg-light active">
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="img/10.JPG"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Initial Project Planning</h4>
-                  <p class="card-text">By Pettiina N.</p>
-                    <a   href="blog1.html">Read</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                <img class="card-img-top" src="img/4.JPG"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Onsite Analysis</h4>
-                  <p class="card-text">By Maimuna S.</p>
-                     <a   href="blog2.html">Read</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                <img class="card-img-top" src="img/8.JPG"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Workshop and Interviews</h4>
-                  <p class="card-text">By Amaka</p>
-                     <a   href="blog3.html">Read</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!--/.First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item bg-light">
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="img/2.JPG"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Strategy Design and Preliminaries</h4>
-                  <p class="card-text">By Nehal J.</p>
-                <a   href="blog4.html">Read</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                <img class="card-img-top" src="img/9.JPG"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Water Management and Concept Design </h4>
-                  <p class="card-text">By Stephanie K.</p>
-                    <a   href="blog5.html">Read</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                <img class="card-img-top" src="img/6.JPG"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Back to Finland and Iterating Concept Designs</h4>
-                  <p class="card-text">By Jarrod L.</p>
-                  <a   href="blog6.html">Read</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!--/.Second slide-->
-
-
-
-      </div>
-      <!--/.Slides-->
-
-    </div>
-    <!--/.Carousel Wrapper-->
-
-
-  </div>
-
- 
-			
-    </section>
-	
-	 
-	
     <!-- Team Section -->
-    <section id="team" class="projects-section bg-black ">
+    <section id="team" class="projects-section bg-light">
         <div class="container">
-            <h2 class="text-center" style="color:white;">The Team (Amaka)</h2>
+            <h2 class="text-center">The Team (Amaka)</h2>
             <br/>
             <br/>
             <div id="pn" class="row">
@@ -497,11 +298,11 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
             </div>
         </div>
     </section>
-    <section id="gallery" class="gallery-section bg-white">
+    <section id="gallery" class="gallery-section bg-black">
         <br/>
         <br/>
         <div class="container">
-            <h2 class="text-center"  >Gallery</h2>
+            <h2 class="text-center" style="color:white">Gallery</h2>
             <br/>
             <br/>
             <div class="row">
@@ -704,8 +505,21 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
             setTimeout(showSlides, 3000); // Change image every 2 seconds
         }
     </script>
-   
-   
+    <!-- Signup Section -->
+    <!-- <section id="signup" class="signup-section"> -->
+    <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+    <!-- <div class="col-md-10 col-lg-8 mx-auto text-center"> -->
+    <!-- <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> -->
+    <!-- <h2 class="text-white mb-5">Subscribe to receive updates!</h2> -->
+    <!-- <form class="form-inline d-flex"> -->
+    <!-- <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..."> -->
+    <!-- <button type="submit" class="btn btn-primary mx-auto">Subscribe</button> -->
+    <!-- </form> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
     <!-- Contact Section -->
     <section id="contact" class="contact-section bg-black">
         <div class="container">
@@ -725,7 +539,7 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
                 <!-- </div> -->
                 <!-- </div> -->
                 <!-- </div> -->
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-envelope text-primary mb-2"></i>
@@ -737,7 +551,7 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 ">
+                <div class="col-sm-4 ">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fab fa-instagram"></i>
