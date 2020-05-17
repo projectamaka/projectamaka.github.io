@@ -61,9 +61,7 @@ a {
   transition: all 0.2s;
 }
 
-a:focus, a:hover {
-  color: #0085A1;
-}
+ 
 
 blockquote {
   font-style: italic;
@@ -150,16 +148,12 @@ img::-moz-selection {
     padding: 10px 20px;
     color: #fff;
   }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
+ 
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
     color: #fff;
   }
-  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -180,15 +174,11 @@ img::-moz-selection {
   #mainNav.is-fixed .navbar-brand {
     color: #212529;
   }
-  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
-  }
+  
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: #212529;
   }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
-  }
+ 
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     transform: translate3d(0, 100%, 0);
@@ -298,10 +288,7 @@ header.masthead .post-heading .meta a {
   color: #212529;
 }
 
-.post-preview > a:focus, .post-preview > a:hover {
-  text-decoration: none;
-  color: #0085A1;
-}
+ 
 
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -326,10 +313,7 @@ header.masthead .post-heading .meta a {
   color: #212529;
 }
 
-.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
-  text-decoration: underline;
-  color: #0085A1;
-}
+ 
 
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
@@ -426,11 +410,7 @@ footer .copyright {
   border-color: #0085A1;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
-  background-color: #00657b !important;
-  border-color: #00657b !important;
-}
+ 
 
 .btn-lg {
   font-size: 16px;
